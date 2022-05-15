@@ -2,15 +2,9 @@ package com.sebastian.garcia.game.ui;
 
 import com.sebastian.garcia.game.controller.AppController;
 
-/**
- *
- * @author Hewlett Packard
- */
 public class SettingGameView extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Fin_de_juego
-     */
+   
     public SettingGameView() {
         initComponents();
         AppController.getInstance().configNewGame();
@@ -158,6 +152,7 @@ public class SettingGameView extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 new SettingGameView().setVisible(true);
             }

@@ -19,7 +19,7 @@ public class PlayView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        opcion_respuesta = new javax.swing.ButtonGroup();
+        opcionRespuesta = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         toRetire = new javax.swing.JButton();
         valid = new javax.swing.JButton();
@@ -64,7 +64,7 @@ public class PlayView extends javax.swing.JFrame {
 
         score.setForeground(new java.awt.Color(0, 0, 0));
 
-        opcion_respuesta.add(op1);
+        opcionRespuesta.add(op1);
         op1.setForeground(new java.awt.Color(0, 0, 0));
         op1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -72,7 +72,7 @@ public class PlayView extends javax.swing.JFrame {
             }
         });
 
-        opcion_respuesta.add(op2);
+        opcionRespuesta.add(op2);
         op2.setForeground(new java.awt.Color(0, 0, 0));
         op2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,7 +80,7 @@ public class PlayView extends javax.swing.JFrame {
             }
         });
 
-        opcion_respuesta.add(op3);
+        opcionRespuesta.add(op3);
         op3.setForeground(new java.awt.Color(0, 0, 0));
         op3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -88,7 +88,7 @@ public class PlayView extends javax.swing.JFrame {
             }
         });
 
-        opcion_respuesta.add(op4);
+        opcionRespuesta.add(op4);
         op4.setForeground(new java.awt.Color(0, 0, 0));
         op4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -219,6 +219,8 @@ public class PlayView extends javax.swing.JFrame {
             this.setVisible(false);
             new EndGameView().setVisible(true);
         }
+        
+        opcionRespuesta.clearSelection();
     }//GEN-LAST:event_validActionPerformed
 
     private void op3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_op3ActionPerformed
@@ -293,7 +295,7 @@ public class PlayView extends javax.swing.JFrame {
     private javax.swing.JRadioButton op2;
     private javax.swing.JRadioButton op3;
     private javax.swing.JRadioButton op4;
-    private javax.swing.ButtonGroup opcion_respuesta;
+    private javax.swing.ButtonGroup opcionRespuesta;
     private javax.swing.JLabel question;
     private javax.swing.JLabel score;
     private javax.swing.JButton toRetire;
