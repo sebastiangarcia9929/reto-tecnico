@@ -86,7 +86,7 @@ public class AppController {
     }
     
     public boolean validateGameSetting() {        
-        return !categories.stream().filter(category -> category.getQuestions().size() < 1).findFirst().isPresent();
+        return !categories.stream().filter(category -> category.getQuestions().size() < 5).findFirst().isPresent();
     }
 
     public void initGame() {
