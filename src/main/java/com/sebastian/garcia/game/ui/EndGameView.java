@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package com.sebastian.garcia.game.ui;
 
 import com.sebastian.garcia.game.controller.AppController;
@@ -30,24 +26,24 @@ public class EndGameView extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        finalSscore = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        thanks = new javax.swing.JLabel();
+        textScore = new javax.swing.JLabel();
+        finalScore = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(java.awt.Color.white);
 
-        jLabel2.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 24)); // NOI18N
-        jLabel2.setForeground(java.awt.Color.black);
-        jLabel2.setText("Gracias por participar");
+        thanks.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 24)); // NOI18N
+        thanks.setForeground(java.awt.Color.black);
+        thanks.setText("Gracias por participar");
 
-        finalSscore.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 48)); // NOI18N
-        finalSscore.setForeground(new java.awt.Color(153, 255, 255));
-        finalSscore.setText("Puntaje final");
+        textScore.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 48)); // NOI18N
+        textScore.setForeground(new java.awt.Color(153, 255, 255));
+        textScore.setText("Puntaje final");
 
-        jLabel1.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
+        finalScore.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 18)); // NOI18N
+        finalScore.setForeground(new java.awt.Color(0, 0, 0));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -57,24 +53,24 @@ public class EndGameView extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(167, 167, 167)
-                        .addComponent(jLabel1))
+                        .addComponent(finalScore))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(76, 76, 76)
-                        .addComponent(finalSscore, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(textScore, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(92, 92, 92)
-                        .addComponent(jLabel2)))
+                        .addComponent(thanks)))
                 .addContainerGap(54, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(48, 48, 48)
-                .addComponent(finalSscore, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(textScore, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1)
+                .addComponent(finalScore)
                 .addGap(33, 33, 33)
-                .addComponent(jLabel2)
+                .addComponent(thanks)
                 .addContainerGap(46, Short.MAX_VALUE))
         );
 
@@ -93,7 +89,7 @@ public class EndGameView extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
     
     private void initDataView() {
-        jLabel1.setText(String.valueOf(AppController.getInstance().getCurrentTotalScore()));
+        finalScore.setText(String.valueOf(AppController.getInstance().getCurrentTotalScore()));
     }
     /**
      * @param args the command line arguments
@@ -134,9 +130,9 @@ public class EndGameView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel finalSscore;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel finalScore;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel textScore;
+    private javax.swing.JLabel thanks;
     // End of variables declaration//GEN-END:variables
 }

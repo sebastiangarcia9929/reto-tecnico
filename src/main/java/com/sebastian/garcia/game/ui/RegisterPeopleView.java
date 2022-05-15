@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package com.sebastian.garcia.game.ui;
 
 import com.sebastian.garcia.game.controller.AppController;
@@ -30,7 +26,7 @@ public class RegisterPeopleView extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         checkIn = new javax.swing.JButton();
         name = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
+        textName = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -54,9 +50,9 @@ public class RegisterPeopleView extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Trebuchet MS", 1, 24)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel3.setText("Nombre del participante");
+        textName.setFont(new java.awt.Font("Trebuchet MS", 1, 24)); // NOI18N
+        textName.setForeground(new java.awt.Color(0, 0, 0));
+        textName.setText("Nombre del participante");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -66,7 +62,7 @@ public class RegisterPeopleView extends javax.swing.JFrame {
                 .addContainerGap(51, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel3)
+                        .addComponent(textName)
                         .addGap(62, 62, 62))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(name, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -79,7 +75,7 @@ public class RegisterPeopleView extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(40, 40, 40)
-                .addComponent(jLabel3)
+                .addComponent(textName)
                 .addGap(18, 18, 18)
                 .addComponent(name, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -163,8 +159,8 @@ public class RegisterPeopleView extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton checkIn;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField name;
+    private javax.swing.JLabel textName;
     // End of variables declaration//GEN-END:variables
 }

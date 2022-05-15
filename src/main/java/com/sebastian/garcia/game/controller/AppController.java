@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.sebastian.garcia.game.controller;
 
 import com.sebastian.garcia.game.model.Answer;
@@ -17,16 +13,13 @@ import com.sebastian.garcia.game.model.repository.HistoricoRepository;
 import com.sebastian.garcia.game.util.RandomUtil;
 import java.util.List;
 import java.util.stream.Collectors;
-/**
- *
- * @author Hewlett Packard
- */
+
 public class AppController {
     private static AppController INSTANCE = new AppController();
-    private CategoryService categoryService;
-    private QuestionService questionService;
-    private GameService gameService;
-    private HistoricoRepository historicoRepository;
+    private final CategoryService categoryService;
+    private final QuestionService questionService;
+    private final GameService gameService;
+    private final HistoricoRepository historicoRepository;
     private Game currentGame;
     private List<Category> categories;
     private Question currentQuestion;
@@ -93,7 +86,7 @@ public class AppController {
     }
     
     public boolean validateGameSetting() {        
-        return !categories.stream().filter(category -> category.getQuestions().size() < 1).findFirst().isPresent();
+        return !categories.stream().filter(category -> category.getQuestions().size() < 5).findFirst().isPresent();
     }
 
     public void initGame() {

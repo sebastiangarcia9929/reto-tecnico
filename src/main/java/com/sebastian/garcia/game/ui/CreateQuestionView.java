@@ -1,17 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package com.sebastian.garcia.game.ui;
 
 import com.sebastian.garcia.game.controller.AppController;
 import java.util.Arrays;
 import javax.swing.DefaultComboBoxModel;
 
-/**
- *
- * @author Hewlett Packard
- */
+
 public class CreateQuestionView extends javax.swing.JFrame {
     /**
      * Creates new form Configuracion
@@ -39,7 +32,7 @@ public class CreateQuestionView extends javax.swing.JFrame {
         wrongAnswer1 = new javax.swing.JTextField();
         correctAnswer = new javax.swing.JTextField();
         settingQuestion = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
+        groupQuestion = new javax.swing.JLabel();
         category = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -91,10 +84,10 @@ public class CreateQuestionView extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel1.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel1.setText("Grupo de respuestas");
+        groupQuestion.setBackground(new java.awt.Color(0, 0, 0));
+        groupQuestion.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        groupQuestion.setForeground(new java.awt.Color(0, 0, 0));
+        groupQuestion.setText("Grupo de respuestas");
 
         category.setBackground(new java.awt.Color(153, 255, 255));
         category.setForeground(java.awt.Color.black);
@@ -127,7 +120,7 @@ public class CreateQuestionView extends javax.swing.JFrame {
                 .addGap(39, 39, 39))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(105, 105, 105)
-                .addComponent(jLabel1)
+                .addComponent(groupQuestion)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -141,7 +134,7 @@ public class CreateQuestionView extends javax.swing.JFrame {
                         .addGap(59, 59, 59)
                         .addComponent(category, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
-                .addComponent(jLabel1)
+                .addComponent(groupQuestion)
                 .addGap(18, 18, 18)
                 .addComponent(correctAnswer, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -243,7 +236,7 @@ public class CreateQuestionView extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> category;
     private javax.swing.JTextField correctAnswer;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel groupQuestion;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton save;
     private javax.swing.JTextField settingQuestion;
