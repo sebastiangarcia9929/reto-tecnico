@@ -18,23 +18,23 @@ public class CategoryService {
             List<Category> categorys = new ArrayList<>();
 
             Category category1 = new Category();
-            category1.setName("animales");
+            category1.setName("nivel 1");
             category1.setLevel(LEVEL.ONE.getValue());
 
             Category category2 = new Category();
-            category2.setName("aviones");
+            category2.setName("nivel 2");
             category2.setLevel(LEVEL.TWO.getValue());
 
             Category category3 = new Category();
-            category3.setName("casas");
+            category3.setName("nivel 3");
             category3.setLevel(LEVEL.THREE.getValue());
 
             Category category4 = new Category();
-            category4.setName("castillos");
+            category4.setName("nivel 4");
             category4.setLevel(LEVEL.FOUR.getValue());
 
             Category category5 = new Category();
-            category5.setName("barcos");
+            category5.setName("nivel 5");
             category5.setLevel(LEVEL.FIVE.getValue());
 
             categorys.add(category1);
